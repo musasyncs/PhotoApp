@@ -17,22 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2UF-lb-oiF">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                            </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-ur-jd5">
-                                <rect key="frame" x="87" y="206" width="240" height="146"/>
+                                <rect key="frame" x="87" y="206" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5qP-3n-vHc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vKq-O1-mZC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vKq-O1-mZC" firstAttribute="trailing" secondItem="4Ln-ur-jd5" secondAttribute="trailing" constant="87" id="4vZ-aG-bsY"/>
-                            <constraint firstItem="2UF-lb-oiF" firstAttribute="top" secondItem="4Ln-ur-jd5" secondAttribute="bottom" constant="86" id="d92-IM-Se2"/>
-                            <constraint firstItem="2UF-lb-oiF" firstAttribute="centerY" secondItem="bDc-Td-Mif" secondAttribute="centerY" id="i2n-0N-9zh"/>
                             <constraint firstItem="4Ln-ur-jd5" firstAttribute="top" secondItem="vKq-O1-mZC" secondAttribute="top" constant="162" id="nD1-b3-htP"/>
                             <constraint firstItem="4Ln-ur-jd5" firstAttribute="leading" secondItem="vKq-O1-mZC" secondAttribute="leading" constant="87" id="pkQ-Xn-oxY"/>
-                            <constraint firstItem="2UF-lb-oiF" firstAttribute="centerX" secondItem="bDc-Td-Mif" secondAttribute="centerX" id="qI2-e2-9oD"/>
                         </constraints>
                     </view>
                     <connections>

@@ -31,11 +31,10 @@ class SettingsViewController: UIViewController {
                 LocalStorage.shared.hasLogedIn = false
                 ///
                 Presentaion.shared.show(vc: .LoginViewController)
-                MBProgressHUD.hide(for: self.view, animated: true)
             case .failure(let error):
                 print("登出失敗", error.localizedDescription)
             }
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
     }
-
 }

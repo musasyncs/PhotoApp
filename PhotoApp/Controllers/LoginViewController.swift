@@ -190,11 +190,11 @@ extension LoginViewController {
                     LocalStorage.shared.hasLogedIn = true
                     ///
                     Presentaion.shared.show(vc: .MainTabBarController)
-                    MBProgressHUD.hide(for: self.view, animated: true)
                 }
             case .failure(let error):
                 self.showResult(withMessage: error.localizedDescription)
             }
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
     }
     
@@ -221,11 +221,11 @@ extension LoginViewController {
                     LocalStorage.shared.hasLogedIn = true
                     ///
                     Presentaion.shared.show(vc: .MainTabBarController)
-                    MBProgressHUD.hide(for: self.view, animated: true)
                 }
             case .failure(let error):
                 self.showResult(withMessage: error.localizedDescription)
             }
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
     }
     
